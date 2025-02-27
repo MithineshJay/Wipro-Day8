@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   app:
-    image: kaprister/springbootapplication
+    image: mithinesh/springbootapplication
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://db:3306/wipro_spring_security
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Sushant#07
+      SPRING_DATASOURCE_PASSWORD: Geetharaj@78
     depends_on:
       - db
 
@@ -19,7 +19,7 @@ services:
     image: mysql:8.0
     environment:
       MYSQL_DATABASE: wipro_spring_security
-      MYSQL_ROOT_PASSWORD: Sushant#07
+      MYSQL_ROOT_PASSWORD: Geetharaj@78
     ports:
       - "3307:3306"
     volumes:
